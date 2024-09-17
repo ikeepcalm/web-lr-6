@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin panel</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+
+<header class="header">
+    <h1 class="x">Admin panel for managing Toasts</h1>
+</header>
+
+<div class="container">
+    <div class="sidebar-left">
+        <p class="menu">Webpage menu</p>
+        <br>
+        Page navigation:
+        <div class="links">
+            <ol>
+                <li> Shikanokonoko</li>
+                <li> Koshtantan</li>
+                <li> Shikanokonoko</li>
+                <li> Koshtantan</li>
+            </ol>
+        </div>
+        <br>
+    </div>
+
+    <div class="main">
+        <div class="top-middle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="main-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nunc sapien, bibendum aliquet... Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. Integer nunc sapien, bibendum aliquet? Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit. Integer nunc sapien, bibendum aliquet!
+            <div class="toast-create">
+                <div class="toast-form">
+                    <label for="toastMessage">Toast Message: </label>
+                    <input type="text" id="toastMessage" placeholder="Enter your toast message">
+                </div>
+                <div class="toast-form">
+                    <label for="toastHeader">Toast Header: </label>
+                    <input type="text" id="toastHeader" placeholder="Enter your toast header">
+                </div>
+
+                <div class="toast-form">
+                    <label for="toastDate">Toast Date: </label>
+                    <input type="date" id="toastDate" placeholder="Enter your toast header">
+                </div>
+
+                <button id="createToast" class="btn">Create Toast</button>
+            </div>
+
+            <div class="toast-actions">
+                <div id="toastActions" style="display: none">
+                    <button id="saveToasts" class="btn">Save All Toasts</button>
+                    <button id="deleteToasts" class="btn">Delete All Toasts</button>
+                </div>
+
+                <div>Created toasts will appear here:</div>
+            </div>
+
+            <div id="toastContainer" class="toast-container"></div>
+
+            <script src="scripts/index.js"></script>
+        </div>
+    </div>
+
+    <div class="sidebar-right">
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet sodales velit. Maecenas in porta
+            felis, nec gravida sem. Duis euismod lectus at orci tincidunt tincidunt id eget velit. Aenean ultricies,
+            nisl eget semper rhoncus, mauris velit dapibus neque, scelerisque viverra augue enim quis metus.
+        </div>
+        <div class="bottom-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porta congue
+            pretium.
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h2 class="y">... this is the best site ever, come back again!</h2>
+</footer>
+</body>
+</html>
